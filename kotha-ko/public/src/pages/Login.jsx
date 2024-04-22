@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import styled from "styled-components";
 import Logo from "../assets/logo.svg";
@@ -39,6 +39,15 @@ function Login() {
     draggable: true,
     theme: "dark",
   };
+
+  /*useEffect(() => {
+    const checkUserExists = async () => {
+      if (localStorage.getItem("kotha-ko-user")) {
+        navigate("/chat"); // Navigate to the chat tab if the user is already in the database
+      }
+    };
+    checkUserExists();
+  }, []); */
 
   const handleValidation = () => {
     const { password, username } = values;
