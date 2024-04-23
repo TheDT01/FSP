@@ -43,14 +43,14 @@ function Register() {
     theme: "dark",
   };
 
-  /*useEffect(() => {
+  useEffect(() => {
     const user = localStorage.getItem("kotha-ko-user");
     if (user) {
       navigate("/");
     } else {
       // User data not found in local storage, continue with registration
     }
-  }, []); */
+  }, []);
 
   const handleValidation = () => {
     const { password, confirmPassword, username, email } = values;

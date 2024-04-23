@@ -13,7 +13,7 @@ export default function App() {
         <Route path="/Login" element={<Login />} />
         <Route path="/SetAvatar" element={<SetAvatar />} />{" "}
         {/* Correct casing here */}
-        <Route path="/Chat" element={<Chat />} />
+        <Route path="/" element={<Chat />} />
       </Routes>
     </BrowserRouter>
   );

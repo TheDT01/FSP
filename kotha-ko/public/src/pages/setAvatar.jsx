@@ -20,6 +20,14 @@ export default function SetAvatar() {
     draggable: true,
     theme: "dark",
   };
+  useEffect(() => {
+    const user = localStorage.getItem("kotha-ko-user");
+    if (user) {
+      navigate("/login");
+    } else {
+      // User data not found in local storage, continue with registration
+    }
+  }, []);
 
   useEffect(() => {
     const fetchData = async () => {

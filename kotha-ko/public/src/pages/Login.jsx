@@ -40,14 +40,14 @@ function Login() {
     theme: "dark",
   };
 
-  /*useEffect(() => {
+  useEffect(() => {
     const checkUserExists = async () => {
       if (localStorage.getItem("kotha-ko-user")) {
-        navigate("/chat"); // Navigate to the chat tab if the user is already in the database
+        navigate("/"); // Navigate to the chat tab if the user is already in the database
       }
     };
     checkUserExists();
-  }, []); */
+  }, []);
 
   const handleValidation = () => {
     const { password, username } = values;
