@@ -87,6 +87,8 @@ export default function Login() {
             Don't have an account ? <Link to="/register">Create One.</Link>
           </span>
         </form>
+
+        <div className="credit">planned and created by Rehanul Islam</div>
       </FormContainer>
       <ToastContainer />
     </>
@@ -114,6 +116,12 @@ const FormContainer = styled.div`
       color: white;
       text-transform: uppercase;
     }
+  }
+  .credit {
+    color: white;
+    display: flex;
+    justify-content: bottom;
+    align-items: right;
   }
 
   form {

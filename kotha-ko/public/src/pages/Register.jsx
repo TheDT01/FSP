@@ -121,6 +121,8 @@ export default function Register() {
             Already have an account ? <Link to="/login">Login.</Link>
           </span>
         </form>
+
+        <div className="credit">planned and created by Rehanul Islam</div>
       </FormContainer>
       <ToastContainer />
     </>
@@ -148,6 +150,12 @@ const FormContainer = styled.div`
       color: white;
       text-transform: uppercase;
     }
+  }
+  .credit {
+    color: white;
+    display: flex;
+    justify-content: bottom;
+    align-items: right;
   }
 
   form {

@@ -56,6 +56,8 @@ export default function Chat() {
             <ChatContainer currentChat={currentChat} socket={socket} />
           )}
         </div>
+
+        <div className="credit">planned and created by Rehanul Islam</div>
       </Container>
     </>
   );
@@ -79,5 +81,11 @@ const Container = styled.div`
     @media screen and (min-width: 720px) and (max-width: 1080px) {
       grid-template-columns: 35% 65%;
     }
+  }
+  .credit {
+    color: white;
+    display: flex;
+    justify-content: bottom;
+    align-items: right;
   }
 `;
